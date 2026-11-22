@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Himalaya Cleaning | South Island, New Zealand</title>
-  <meta name="description" content="Himalaya Cleaning is an owner-run cleaning business in the South Island. We clean homes, restaurants and moving-out properties.">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, Helvetica, sans-serif; color: #1f3a5f; background: #f4f9fc; line-height: 1.6; }
-    header { background: #ffffff; text-align: center; padding: 40px 20px 30px; border-bottom: 4px solid #3ecf8e; }
-    header h1 { font-size: 2.4rem; color: #1f3a5f; }
-    header p { margin-top: 8px; font-size: 1.1rem; color: #4a6a8a; }
-    section { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-    h2 { color: #1f3a5f; margin-bottom: 16px; font-size: 1.7rem; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 20px; }
-    .card { background: #ffffff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(31, 58, 95, 0.1); }
-    .card h3 { margin-bottom: 8px; color: #1f3a5f; }
-    .contact { background: #1f3a5f; color: #ffffff; text-align: center; border-radius: 12px; }
-    .contact h2 { color: #ffffff; }
-    .contact a { color: #3ecf8e; font-weight: bold; font-size: 1.2rem; text-decoration: none; }
-    footer { text-align: center; padding: 24px; font-size: 0.9rem; color: #4a6a8a; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himalaya Cleaning | South Island, New Zealand</title>
+<meta name="description" content="Himalaya Cleaning is an owner-run cleaning business in the South Island. We clean homes, restaurants and moving-out properties.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; color: #0f2a4a; background: #ffffff; line-height: 1.6; }
+
+.topbar { background: #ffffff; text-align: center; padding: 14px 20px; border-bottom: 1px solid #e3edf5; }
+.topbar img { max-width: 260px; width: 70%; height: auto; }
+.topbar .fallback { font-size: 1.4rem; font-weight: bold; color: #0e7bc1; }
+
+.hero { position: relative; overflow: hidden; background: linear-gradient(180deg, #2f93d6 0%, #62b4ea 55%, #dff1fc 100%); text-align: center; padding: 60px 20px 90px; color: #ffffff; }
+.hero .cloud { position: absolute; background: rgba(255,255,255,0.75); border-radius: 50px; filter: blur(2px); }
+.hero .c1 { width: 160px; height: 46px; top: 40px; left: 6%; }
+.hero .c2 { width: 220px; height: 60px; bottom: 30px; right: 4%; }
+.hero .c3 { width: 120px; height: 36px; bottom: 80px; left: 12%; }
+.hero h1 { position: relative; font-size: clamp(3rem, 14vw, 7rem); line-height: 0.95; font-weight: 900; letter-spacing: -2px; text-transform: uppercase; text-shadow: 0 4px 0 rgba(15,42,74,0.18); }
+.hero p { position: relative; max-width: 560px; margin: 22px auto 0; font-size: 1.15rem; }
+.btn { position: relative; display: inline-block; margin-top: 28px; background: #3ecf8e; color: #0f2a4a; font-weight: bold; font-size: 1.1rem; padding: 14px 30px; border-radius: 40px; text-decoration: none; box-shadow: 0 4px 12px rgba(15,42,74,0.25); }
+
+section { max-width: 960px; margin: 0 auto; padding: 50px 20px; }
+h2 { font-size: 1.9rem; margin-bottom: 14px; color: #0f2a4a; }
+.red-line { width: 60px; height: 4px; background: #3ecf8e; margin-bottom: 18px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 22px; }
+.card { background: #f1f8fd; border-radius: 14px; padding: 26px; border-top: 5px solid #0e7bc1; }
+.card h3 { margin-bottom: 8px; color: #0e7bc1; font-size: 1.25rem; }
+
+.contact { background: #0f2a4a; color: #ffffff; text-align: center; max-width: 100%; }
+.contact h2 { color: #ffffff; }
+.contact a.mail { display: inline-block; margin-top: 14px; color: #3ecf8e; font-weight: bold; font-size: 1.25rem; text-decoration: none; }
+
+footer { text-align: center; padding: 22px; font-size: 0.9rem; color: #4a6a8a; }
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Himalaya Cleaning</h1>
-    <p>Fresh, reliable cleaning across the South Island</p>
-  </header>
+<div class="topbar">
+<img src="logo.png" alt="Himalaya Cleaning logo" onerror="this.style.display='none'; document.getElementById('fb').style.display='block';">
+<div id="fb" class="fallback" style="display:none;">Himalaya Cleaning</div>
+</div>
 
-  <section id="who-we-are">
-    <h2>Who We Are</h2>
-    <p>Himalaya Cleaning is an owner-run cleaning business based in the South Island of New Zealand. We take pride in our work, and every job gets personal attention from start to finish. Whether it is a family home or a busy restaurant, we aim to leave every space spotless.</p>
-  </section>
+<div class="hero">
+<div class="cloud c1"></div>
+<div class="cloud c2"></div>
+<div class="cloud c3"></div>
+<h1>Spotless<br>Every Time</h1>
+<p>Owner-run cleaning for homes, restaurants and moving-out cleans across the South Island.</p>
+<a class="btn" href="mailto:himalayacleaningnz@gmail.com">Get a Free Quote</a>
+</div>
 
-  <section id="what-we-do">
-    <h2>What We Do</h2>
-    <p>We offer contract and one-off cleaning for a range of places.</p>
-    <div class="cards">
-      <div class="card">
-        <h3>Restaurants</h3>
-        <p>Regular contract cleaning for restaurants and cafes, so your kitchen and dining area are always ready for customers.</p>
-      </div>
-      <div class="card">
-        <h3>Homes</h3>
-        <p>Weekly, fortnightly or one-off home cleaning, tailored to what you need.</p>
-      </div>
-      <div class="card">
-        <h3>Moving Out Cleans</h3>
-        <p>A thorough end-of-tenancy or moving-out clean, to help you hand the keys back stress free.</p>
-      </div>
-    </div>
-  </section>
+<section id="who-we-are">
+<h2>Who We Are</h2>
+<div class="red-line"></div>
+<p>Himalaya Cleaning is an owner-run cleaning business based in the South Island of New Zealand. We take pride in our work, and every job gets personal attention from start to finish. Whether it is a family home or a busy restaurant, we aim to leave every space spotless.</p>
+</section>
 
-  <section id="contact" class="contact">
-    <h2>Get a Free Quote</h2>
-    <p>Email us with your location and what you need cleaned.</p>
-    <p><a href="mailto:himalayacleaningnz@gmail.com">himalayacleaningnz@gmail.com</a></p>
-  </section>
+<section id="what-we-do">
+<h2>What We Do</h2>
+<div class="red-line"></div>
+<p>We offer contract and one-off cleaning for a range of places.</p>
+<div class="cards">
+<div class="card">
+<h3>Restaurants</h3>
+<p>Regular contract cleaning for restaurants and cafes, so your kitchen and dining area are always ready for customers.</p>
+</div>
+<div class="card">
+<h3>Homes</h3>
+<p>Weekly, fortnightly or one-off home cleaning, tailored to what you need.</p>
+</div>
+<div class="card">
+<h3>Moving Out Cleans</h3>
+<p>A thorough end-of-tenancy or moving-out clean, to help you hand the keys back stress free.</p>
+</div>
+</div>
+</section>
 
-  <footer>
-    &copy; 2026 Himalaya Cleaning. South Island, New Zealand.
-  </footer>
+<section id="contact" class="contact">
+<h2>Ready for a Fresh Start?</h2>
+<p>Email us with your location and what you need cleaned.</p>
+<a class="mail" href="mailto:himalayacleaningnz@gmail.com">himalayacleaningnz@gmail.com</a>
+</section>
+
+<footer>
+&copy; 2026 Himalaya Cleaning. South Island, New Zealand.
+</footer>
 
 </body>
 </html>
